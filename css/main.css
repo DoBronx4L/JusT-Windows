@@ -1,0 +1,474 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #201E1F;
+}
+
+/* General Image Styling */
+img {
+    border-radius: 12px;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Journey Image Styling */
+.journey-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+/* About Us Section Layout */
+.watch-animation {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 20px;
+}
+
+.watch-animation .journey-image {
+    flex: 1;
+    text-align: center;
+}
+
+.watch-animation aside {
+    flex: 1;
+}
+
+.category img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #000000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.main-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.main-nav a:hover {
+    color: #F9F575;
+}
+
+/* Elevate Your Fitness Journey Section with Hero Image */
+.journey {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+    color: #201E1F;
+}
+
+.journey-hero img {
+    object-fit: cover;
+    width: 100%;
+    max-width: 850px;  /* Increased max-width */
+    height: auto;
+    border-radius: 20px;  /* Softer, more modern curve */
+    margin-bottom: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);  /* Adds a nice soft shadow */
+}
+
+.journey-text h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.journey-text p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: #fff;
+}
+
+.start-button {
+    display: inline-block;
+    background-color: #2a3cfe;
+    color: #ffffff;
+    padding: 18px 36px;  
+    font-size: 25px;      
+    text-decoration: none;
+    border-radius: 8px;   
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.start-button:hover {
+    background-color: #75cff9;
+    color: #201E1F;
+    transform: scale(1.05); 
+}
+
+.video-trailer {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #000000;
+}
+
+.video-trailer h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #201E1F;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Journey Sections */
+.journey2, .journey3, .journey4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 50px;
+}
+
+.journey-content {
+    flex: 1;
+    max-width: 50%;
+    padding: 0 20px;
+}
+
+.journey-image {
+    flex: 1;
+    max-width: 40%;
+    text-align: center;
+}
+
+.journey-image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.journey2 {
+    background-color: #4877ee;
+    color: #ffffff;
+}
+
+.journey3 {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.journey4 {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Product Categories */
+.product-categories {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 20px;
+    background-color: #F9F575;
+}
+
+.category {
+    text-align: center;
+    max-width: 250px;
+}
+
+.category img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.category h3 {
+    margin-top: 15px;
+    color: #201E1F;
+}
+
+.category p {
+    color: #201E1F;
+}
+
+/* Footer */
+footer {
+    background-color: #4877ee;
+    color: #ffffff;
+    padding: 40px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-section h4 {
+    margin-bottom: 15px;
+    color: #4449d4;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    color: #FE7B2A;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    background-color: #201E1F;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Animation */
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Blender Watch Section */
+.watch-animation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.watch-animation aside {
+    flex: 1;
+    max-width: 500px;
+    padding: 20px;
+    padding-left: 90px;
+}
+
+#three-canvas {
+    flex: 1;
+    width: 100%;
+    height: auto;
+    min-width: 10%;
+    max-width: 1000px;
+}
+
+@media (max-width: 480px) {
+    .watch-animation {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 95%;
+    }
+
+    .watch-animation aside {
+        order: 1;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        padding-right: 40px;
+    }
+
+    #three-canvas {
+        order: 2;
+        width: 100%;
+        min-width: 200px;
+        max-width: 200px;
+        align-items: center;
+    }
+
+    .watch-animation aside h2 {
+        font-size: 1.5rem;
+    }
+
+    .watch-animation aside p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .top-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-nav {
+        margin-top: 15px;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .journey2, .journey3, .journey4 {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .journey-content, .journey-image {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .journey-image {
+        margin-top: 20px;
+    }
+
+    .product-categories {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-trailer {
+        padding: 50px 20px;
+    }
+
+    .video-trailer h2 {
+        font-size: 28px;
+    }
+}
+
+.gallery {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.gallery h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.gallery-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    scroll-snap-type: x mandatory;
+    padding: 10px;
+}
+
+.gallery-item {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    border-radius: 15px;
+    overflow: hidden;
+    min-width: 300px;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* For mobile */
+@media (max-width: 600px) {
+    .gallery-item {
+        min-width: 250px;
+        max-width: 250px;
+    }
+
+    .gallery h2 {
+        font-size: 28px;
+    }
+}

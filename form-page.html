@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a Free Estimate | JusT Windows</title>
+    <link rel="stylesheet" href="./css/form.css">
+    <script defer src="./js/form.js"></script>
+</head>
+<body>
+    <section class="booking-form">
+        <br>
+        <br>
+        <br>
+        <h2>Get a Free Estimate</h2>
+        <p>Fill out the contact form below for an estimate!</p>
+        <form>
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Last Name">
+
+            <label for="email">Email (required)</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+
+            <label for="address">Address</label>
+            <input type="tel" id="address" name="address" placeholder="address" required>
+
+            <label for="services">Select your service(s) (required)</label>
+            <select id="services" name="services" multiple required>
+                <option value="window-cleaning">Window Cleaning</option>
+                <option value="gutter-cleaning">Gutter Cleaning</option>
+                <option value="screen-cleaning">Screen Cleaning</option>
+            </select>
+
+            <label for="notes">Window Pane Count (required)</label>
+            <textarea id="notes" name="notes" placeholder="Additional Information" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</body>
+</html>
